@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   npm-publish:
+    if: github.repository == 'volantis-x/volantis-static'
     name: npm-publish
     runs-on: ubuntu-latest
     steps:
