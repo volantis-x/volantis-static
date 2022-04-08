@@ -8,4 +8,3 @@ https://www.npmjs.com/package/volantis-static
 
 https://unpkg.com/volantis-static/
 
-https://cdn.jsdelivr.net/npm/volantis-static/
