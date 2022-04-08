@@ -5,3 +5,7 @@
 volantis static 静态资源文件 npm 包
 
 https://www.npmjs.com/package/volantis-static
+
+https://unpkg.com/volantis-static/
+
+https://cdn.jsdelivr.net/npm/volantis-static/
