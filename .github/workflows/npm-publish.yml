@@ -2,6 +2,10 @@ name: npm-publish
 on:
   push:
   workflow_dispatch:
+
+permissions:
+  id-token: write
+
 jobs:
   npm-publish:
     if: github.repository == 'volantis-x/volantis-static'
@@ -13,7 +17,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@master
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 24 #${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org
       - name: "Automated Version Bump"
         run: |
@@ -21,5 +25,3 @@ jobs:
       - name: Publish
         run: |
           npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.npm_mhuig_token }}
